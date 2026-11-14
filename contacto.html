@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Global Pathways</title>
+<meta name="description" content="Contáctanos para tu primera asesoría gratuita. Da el primer paso hacia tu nueva carrera en el exterior con Global Pathways.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav is-solid nav-locked" id="nav">
+  <a class="brand" href="index.html" aria-label="Global Pathways — inicio"><img class="brand-logo" src="assets/img/logo-reverse.png" alt="Global Pathways" width="260" height="56"></a>
+  <nav class="nav-links" aria-label="Principal">
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    <a href="canada.html">Destinos</a>
+  </nav>
+  <a class="btn btn-gold nav-cta" href="contacto.html">Contáctanos</a>
+  <button class="nav-burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<main>
+<section class="contact-page">
+  <span class="contact-wm" aria-hidden="true"></span>
+  <div class="wrap">
+    <div class="contact-head reveal">
+      <img class="contact-logo" src="assets/img/logo.png" alt="Global Pathways">
+      <h1>Contáctanos para tu primera asesoría gratuita</h1>
+      <p>Da el primer paso hacia tu nueva carrera en el exterior. Cuéntanos de ti y te contactamos para armar tu plan a Canadá.</p>
+    </div>
+
+    <form class="cf-form reveal" action="https://formsubmit.co/melissa@global-pw.com" method="POST">
+      <input type="hidden" name="_subject" value="Nuevo lead desde la web — Global Pathways">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <div class="cf-row">
+        <label>País de destino
+          <select name="País">
+            <option value="Canadá">Canadá</option>
+            <option disabled>Estados Unidos (no disponible aún)</option>
+            <option disabled>Australia (no disponible aún)</option>
+            <option disabled>Alemania (no disponible aún)</option>
+          </select>
+        </label>
+        <label>¿Qué te interesa?
+          <select name="Interés" id="cfServicio" required>
+            <option value="">Elige una opción…</option>
+            <option value="estudiar">Estudiar en Canadá</option>
+            <option value="trabajar">Trabajar en Canadá</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- ESTUDIAR -->
+      <div class="cf-group" data-group="estudiar" hidden>
+        <div class="cf-row">
+          <label>Institución de interés
+            <select name="Institución">
+              <option value="">Sin preferencia aún</option>
+              <option>University of Niagara Falls Canada</option>
+              <option>Trebas Institute (Montreal)</option>
+              <option>StudyQuest</option>
+              <option>University Canada West (Vancouver)</option>
+              <option>George Brown College</option>
+            </select>
+          </label>
+          <label>Tipo de educación
+            <select name="Nivel">
+              <option value="">Elige…</option>
+              <option>Certificados</option>
+              <option>Diploma</option>
+              <option>Bachelor's</option>
+              <option>Master's</option>
+            </select>
+          </label>
+        </div>
+        <label>Ciudad de interés
+          <select name="Ciudad">
+            <option value="">Sin preferencia</option>
+            <option>Toronto</option>
+            <option>Niágara</option>
+            <option>Vancouver</option>
+            <option>Montréal</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- TRABAJAR -->
+      <div class="cf-group" data-group="trabajar" hidden>
+        <label>¿A qué ocupación te dedicas o qué título tienes?
+          <input type="text" name="Ocupación" placeholder="Ej: Ingeniero de sistemas, enfermera, chef…">
+        </label>
+        <label>¿Qué tipo de oportunidad laboral buscas?
+          <input type="text" name="Busca" placeholder="Ej: trabajo en tecnología, oficios, salud…">
+        </label>
+      </div>
+
+      <!-- DATOS + ENVÍO (se despliega al elegir servicio) -->
+      <div class="cf-rest" hidden>
+        <div class="cf-row">
+          <label>Nombre<input type="text" name="Nombre" required></label>
+          <label>Apellidos<input type="text" name="Apellidos"></label>
+        </div>
+        <div class="cf-row">
+          <label>Correo<input type="email" name="Email" required></label>
+          <label>Teléfono / WhatsApp<input type="tel" name="Teléfono"></label>
+        </div>
+        <label>¿Alguna pregunta que te gustaría resolver antes de la llamada?
+          <textarea name="Preguntas" rows="3" placeholder="Escríbela aquí y la preparamos para tu asesoría."></textarea>
+        </label>
+        <button class="btn btn-gold btn-lg" type="submit">Enviar mi información</button>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <p class="footer-tagline">¡Tu futuro internacional comienza aquí!</p>
+  <div class="footer-cta"><a class="btn btn-gold btn-lg" href="https://calendar.app.google/SqTaqAaw6veLsDHE7" target="_blank" rel="noopener">Agenda tu llamada</a></div>
+  <div class="wrap footer-grid">
+    <div class="footer-brandcol">
+      <img class="footer-logo-big" src="assets/img/logo-reverse.png" alt="Global Pathways">
+    </div>
+    <div class="footer-right">
+      <nav class="footer-index" aria-label="Índice del sitio">
+        <div class="fi-col">
+          <h5>Explora</h5>
+          <a href="index.html">Inicio</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="sobre-nosotros.html">Sobre Nosotros</a>
+          <a href="canada.html">Destinos</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="fi-col">
+          <h5>Contacto</h5>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/global_pw/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.8c-3.15 0-3.52.01-4.76.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.39-.32-1.71-.17-.43-.37-.74-.69-1.06-.32-.32-.63-.52-1.06-.69-.32-.13-.81-.28-1.71-.32-1.24-.06-1.61-.07-4.76-.07zm0 3.06a4.98 4.98 0 1 1 0 9.96 4.98 4.98 0 0 1 0-9.96zm0 8.21a3.23 3.23 0 1 0 0-6.46 3.23 3.23 0 0 0 0 6.46zm6.34-8.41a1.16 1.16 0 1 1-2.33 0 1.16 1.16 0 0 1 2.33 0z"/></svg></a>
+            <a href="https://wa.me/14373268430" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 1.9a8.1 8.1 0 1 1-4.2 15l-.3-.2-2.8.7.8-2.7-.2-.3A8.1 8.1 0 0 1 12 3.9zm4.6 10.3c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.1-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.2.2-.3.2-.5.1-.1 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4 0-.7.3-.2.2-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3z"/></svg></a>
+            <a href="mailto:info@global-pw.com" aria-label="Correo"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24-8 5-8-5V6l8 5 8-5v2.24z"/></svg></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Global Pathways · Estudia y trabaja en Canadá</span>
+    <a class="powered" href="https://trivox.ca" target="_blank" rel="noopener">Powered by <img src="assets/img/trivox-white.png" alt="TRIVOX AI"></a>
+  </div>
+</footer>
+
+<div class="float-cta">
+  <a class="fab fab-cal" href="https://calendar.app.google/SqTaqAaw6veLsDHE7" target="_blank" rel="noopener" aria-label="Agenda tu consulta gratis">
+    <span class="fab-bubble">Agenda tu consulta gratis</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><path d="M8 13.5h3M8 17h5"/></svg>
+  </a>
+  <a class="fab fab-wa" href="https://wa.me/14373268430?text=Hola%2C%20estoy%20interesado%20en%20iniciar%20mi%20proceso%20migratorio%20con%20ustedes" target="_blank" rel="noopener" aria-label="Chatea con nosotros por WhatsApp">
+    <span class="fab-bubble">Chatea con nosotros</span>
+    <span class="wa-ring" aria-hidden="true"></span>
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-1.6c1.7.9 3.6 1.4 5.7 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.9 1 1-4.8-.2-.4c-1-1.6-1.5-3.4-1.5-5.3C5 9.5 9.9 4.9 16 4.9S27 9.5 27 15.1 22.1 24.8 16 24.8zm6.1-7.3c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.8 5.2.8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.2-.6-.4z"/></svg>
+  </a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
