@@ -925,3 +925,27 @@ a.unique-card.featured::after{color:#ffe6a8}
 .fab:hover{animation-play-state:paused;transform:scale(1.07)}
 @keyframes fabShake{0%,90%,100%{transform:rotate(0)}91%{transform:rotate(-9deg)}93%{transform:rotate(9deg)}95%{transform:rotate(-7deg)}97%{transform:rotate(5deg)}99%{transform:rotate(-3deg)}}
 @media(prefers-reduced-motion:reduce){.fab{animation:none}}
+
+/* ============ MOBILE FIXES + logo nav ============ */
+/* hero inicio: llenar pantalla real del celular */
+.hero{min-height:100svh;min-height:100dvh}
+
+/* logo nav más grande sin ensanchar la barra */
+.brand-logo{height:112px}
+.nav.is-solid .brand-logo{height:76px}
+
+/* timeline en celular: línea recta izq + cards alineadas a la derecha (sin zigzag) */
+@media(max-width:760px){
+  .tl-track{max-width:100%}
+  .tl-spine{left:23px}
+  .tl-step{display:block;position:relative;padding-left:58px;grid-template-columns:none}
+  .tl-node{position:absolute;left:23px;top:16px;transform:translateX(-50%);width:44px;height:44px;font-size:18px;margin:0}
+  .tl-step:nth-child(odd) .tl-card,.tl-step:nth-child(even) .tl-card{grid-column:auto;width:auto;margin:0}
+  .tl-card{grid-template-columns:1fr}
+}
+
+/* hero destinos: llenar pantalla en celular (collage toma el resto) */
+@media(max-width:820px){
+  .dest-hero{min-height:100dvh;grid-template-columns:1fr;grid-template-rows:auto 1fr}
+  .dest-hero-collage{min-height:0}
+}
